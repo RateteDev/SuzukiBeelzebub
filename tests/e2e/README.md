@@ -25,9 +25,8 @@
 ## テスト項目の構成
 
 - `01_startup.md`: 起動とログインテスト
-- `02_text_commands.md`: テキストコマンドのテスト
+- `02_text_commands.md`: テキストベースのコマンドテスト（要約、今北産業、MVP、年齢推定、性格分析など）
 - `03_voice_commands.md`: ボイスコマンドのテスト
-- `04_personality_analysis.md`: 性格分析機能のテスト
 
 ## 結果の記録方法
 
