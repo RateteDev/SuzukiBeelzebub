@@ -27,15 +27,15 @@ class DiscordBot(discord.Client):
         async def imakita(interaction: discord.Interaction):
             await self.command_handler.handle_imakita(interaction)
 
-        @self.tree.command(name="silent要約", description="要約結果をあなただけにお届け")
+        @self.tree.command(name="要約silent", description="要約結果をあなただけにお届け")
         async def silent_summarize(interaction: discord.Interaction):
             await self.command_handler.handle_summary(interaction, silent=True)
 
-        @self.tree.command(name="silent_mvp", description="mvpをあなただけにお届け")
+        @self.tree.command(name="mvp_silent", description="mvpをあなただけにお届け")
         async def silent_mvp(interaction: discord.Interaction):
             await self.command_handler.handle_mvp(interaction, silent=True)
 
-        @self.tree.command(name="silent今北産業", description="過去の100投稿を3行にまとめてあなただけにお届け")
+        @self.tree.command(name="今北産業silent", description="過去の100投稿を3行にまとめてあなただけにお届け")
         async def silent_imakita(interaction: discord.Interaction):
             await self.command_handler.handle_imakita(interaction, silent=True)
 
@@ -51,7 +51,7 @@ class DiscordBot(discord.Client):
         async def mbti(interaction: discord.Interaction):
             await self.command_handler.handle_personality_analysis(interaction, "MBTI")
 
-        @self.tree.command(name="silent性格分析mbti", description="過去の投稿から性格を分析して、あなただけにお届け")
+        @self.tree.command(name="性格分析mbti_silent", description="過去の投稿から性格を分析して、あなただけにお届け")
         async def silent_mbti(interaction: discord.Interaction):
             await self.command_handler.handle_personality_analysis(interaction, "MBTI", silent=True)
 
@@ -59,7 +59,7 @@ class DiscordBot(discord.Client):
         async def big5(interaction: discord.Interaction):
             await self.command_handler.handle_personality_analysis(interaction, "BIG5")
 
-        @self.tree.command(name="silent性格分析big5", description="過去の投稿から性格を分析して、あなただけにお届け")
+        @self.tree.command(name="性格分析big5_silent", description="過去の投稿から性格を分析して、あなただけにお届け")
         async def silent_big5(interaction: discord.Interaction):
             await self.command_handler.handle_personality_analysis(interaction, "BIG5", silent=True)
 
@@ -67,7 +67,7 @@ class DiscordBot(discord.Client):
         async def age_guess(interaction: discord.Interaction):
             await self.command_handler.handle_age_estimation(interaction)
 
-        @self.tree.command(name="silent年齢推定", description="過去の投稿から年齢を推定して、あなただけにお届け")
+        @self.tree.command(name="年齢推定silent", description="過去の投稿から年齢を推定して、あなただけにお届け")
         async def silent_age_guess(interaction: discord.Interaction):
             await self.command_handler.handle_age_estimation(interaction, silent=True)
 
